@@ -1,7 +1,7 @@
 package dbresolver
 
 import (
-	"gorm.io/gorm"
+	"github.com/wubin1989/gorm"
 )
 
 type resolver struct {

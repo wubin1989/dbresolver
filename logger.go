@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/logger"
+	"github.com/wubin1989/gorm"
+	"github.com/wubin1989/gorm/logger"
 )
 
 type ResolverModeKey string

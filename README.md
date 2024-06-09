@@ -14,9 +14,9 @@ DBResolver adds multiple databases support to GORM, the following features are s
 
 ```go
 import (
-  "gorm.io/gorm"
-  "gorm.io/plugin/dbresolver"
-  "gorm.io/driver/mysql"
+  "github.com/wubin1989/gorm"
+  "github.com/wubin1989/dbresolver"
+  "github.com/wubin1989/mysql"
 )
 
 DB, err := gorm.Open(mysql.Open("db1_dsn"), &gorm.Config{})
@@ -66,7 +66,7 @@ DB.Table("orders").Find(&Report{}) // replicas `db8`
 
 ### Read/Write Splitting
 
-Read/Write splitting with DBResolver based on the current using [GORM callback](https://gorm.io/docs/write_plugins.html).
+Read/Write splitting with DBResolver based on the current using [GORM callback](https://github.com/wubin1989/docs/write_plugins.html).
 
 For `Query`, `Row` callback, will use `replicas` unless `Write` mode specified
 For `Raw` callback, statements are considered read-only and will use `replicas` if the SQL starts with `SELECT`

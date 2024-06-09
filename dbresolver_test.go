@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
-	"gorm.io/gorm/logger"
-	"gorm.io/plugin/dbresolver"
+	"github.com/wubin1989/dbresolver"
+	"github.com/wubin1989/gorm"
+	"github.com/wubin1989/gorm/logger"
+	"github.com/wubin1989/mysql"
 )
 
 type User struct {

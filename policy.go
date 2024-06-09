@@ -3,7 +3,7 @@ package dbresolver
 import (
 	"math/rand"
 
-	"gorm.io/gorm"
+	"github.com/wubin1989/gorm"
 )
 
 type Policy interface {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"gorm.io/gorm"
+	"github.com/wubin1989/gorm"
 )
 
 func (dr *DBResolver) SetConnMaxIdleTime(d time.Duration) *DBResolver {
